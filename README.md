@@ -15,7 +15,11 @@ The task was to:
 2.5. That match will be the password and salt for the specific UID.
 
 What does each class do?
+
 Database - loads the contents of the text files "Hash.txt" and "UID.txt" into two arrays. It essentially keeps the Hashes and UIDs in RAM for later accessing.
+
 HashController - performs operations involving hash. This includes: generating a hash, comparing two hashes, and also converting a byte array to a hexadecimal string.
+
 PasswordVerified - Performs task 1. It consists of a main method, and a retry method
+
 PasswordCracker - Performs task 2. It brute forces every password and salt combination using an nested for loop. It can either brute force one password + salt, or all of passwords and salts in the database (If the "hacker" inputs 0 into as the UID). It also has a retry method.
